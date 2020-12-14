@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="transition">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Todo app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+				color: hsl(235, 19%, 35%);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="background-pic">
+			<img src="./images/bg-desktop-light.jpg" alt="" />
+		</div> -->
+		<header class="header">
+			<h1>Todo</h1>
+			<img class="toggle-mode" src="./images/icon-moon.svg" alt="" />
+		</header>
+
+		<div class="add-todo">
+			<input class="input-value" type="text" placeholder="Add Todo..." />
+		</div>
+
+		<div class="todos">
+			<div class="insert"></div>
+			<!-- <div class="text-field">
+				<span class="circle-check circle-checked"></span>
+				<h3 class="checked">Complete online Javascript Course</h3>
+				<span class="delete"><img src="./images/icon-cross.svg" alt="" /></span>
+			</div>
+			<div class="text-field">
+				<span class="circle-check"></span>
+				<h3>Pickup the trash</h3>
+				<span class="delete"><img src="./images/icon-cross.svg" alt="" /></span>
+			</div>
+			<div class="text-field">
+				<span class="circle-check circle-checked"></span>
+				<h3 class="checked">Read for one hour</h3>
+				<span class="delete"><img src="./images/icon-cross.svg" alt="" /></span>
+			</div>
+			<div class="text-field">
+				<span class="circle-check"></span>
+				<h3>Pickup groceries</h3>
+				<span class="delete"><img src="./images/icon-cross.svg" alt="" /></span>
+			</div>
+
+			<div class="text-field">
+				<span class="circle-check"></span>
+				<h3>Complete this challenge</h3>
+				<span class="delete"><img src="./images/icon-cross.svg" alt="" /></span>
+			</div> -->
+
+			<div class="todo-options">
+				<div class="items-left">0 items left</div>
+				<ul class="filter">
+					<li><button class="all">All</button></li>
+					<li><button class="active">Active</button></li>
+					<li><button class="complete">Completed</button></li>
+				</ul>
+
+				<button class="clear">Clear Completed</button>
+			</div>
+
+			<div class="mobile-todo-options">
+				<div class="items-left">0 items left</div>
+				<button class="clear">Clear Completed</button>
+			</div>
+		</div>
+		<div class="mobile-options">
+			<ul class="filter">
+				<li><button class="all">All</button></li>
+				<li><button class="active">Active</button></li>
+				<li><button class="complete">Completed</button></li>
+			</ul>
+		</div>
+
+		<footer>
+			<h3>Drag and drop to reorder list</h3>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Debanjit Sengupta</a>.
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
