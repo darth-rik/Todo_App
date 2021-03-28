@@ -191,7 +191,7 @@ div.dark {
 
 .circle-check {
 	height: 3rem;
-	width: 3rem;
+	min-width: 3rem;
 	border-radius: 50%;
 	border: 1px solid var(--color-Very-Light-Grayish-Blue);
 	margin-right: 3rem;
@@ -199,7 +199,7 @@ div.dark {
 @media only screen and (max-width: 700px) {
 	.circle-check {
 		max-height: 2rem;
-		max-width: 2rem;
+		min-width: 2rem;
 		margin-right: 1.8rem;
 	}
 }
@@ -212,10 +212,13 @@ div.dark {
 	margin-right: auto;
 	font-weight: 400;
 	color: var(--color-text);
+	word-break: break-all;
+	width: 80%;
 }
 @media only screen and (max-width: 700px) {
 	.text-field h3 {
 		font-size: 1.5rem;
+		width: 70%;
 	}
 }
 
