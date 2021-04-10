@@ -82,6 +82,7 @@ const clickShowall = () => {
 	completed.forEach((item) => {
 		item.classList.remove("hide");
 	});
+
 	active.forEach((item) => {
 		item.classList.remove("hide");
 	});
@@ -126,10 +127,11 @@ input.addEventListener("keypress", (e) => {
          <button class="delete "><img src="./images/icon-cross.svg" alt="" /></button>
 	   </div>`;
 
-			document.querySelector(".insert").insertAdjacentHTML("afterbegin", html);
+			insert.insertAdjacentHTML("afterbegin", html);
 			let textField = document.querySelector(".text-field");
 
 			active.push(textField);
+
 			updateItems();
 			input.value = "";
 		}
@@ -159,15 +161,16 @@ insert.addEventListener("click", clickDelete);
 
 // Drag and drop
 new Sortable(insert, {
-	animation: 350,
+	animation: 150,
+	ghostClass: "grey-background-class",
 });
 
 // Toggle dark mode
 toggle.addEventListener("click", () => {
-	if (state === true) {
+	if (state) {
 		document.documentElement.setAttribute("data-theme", "dark");
 		document.querySelector(".todos").classList.add("dark");
-		if (screen.width >= 320 && screen.width < 700) {
+		if (screen.width >= 320 && screen.width <= 768) {
 			document.body.style.backgroundImage = "url(images/bg-mobile-dark.jpg)";
 		} else {
 			document.body.style.backgroundImage = "url(images/bg-desktop-dark.jpg)";
@@ -178,7 +181,7 @@ toggle.addEventListener("click", () => {
 	} else {
 		document.documentElement.setAttribute("data-theme", "light");
 		document.querySelector(".todos").classList.remove("dark");
-		if (screen.width >= 320 && screen.width < 700) {
+		if (screen.width >= 320 && screen.width <= 768) {
 			document.body.style.backgroundImage = "url(images/bg-mobile-light.jpg)";
 		} else {
 			document.body.style.backgroundImage = "url(images/bg-desktop-light.jpg)";

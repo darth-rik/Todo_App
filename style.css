@@ -20,12 +20,12 @@ html {
 	--color-Dark-Grayish-Blue: hsl(236, 9%, 61%);
 	--color-text: hsl(235, 19%, 35%);
 }
-@media only screen and (min-width: 700px) and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
 	html {
 		font-size: 66.66%;
 	}
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	html {
 		font-size: 71.43%;
 	}
@@ -53,7 +53,7 @@ body {
 	background-color: var(--color-background-color);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	body {
 		font-size: 1.2rem;
 		background-image: url("./images/bg-mobile-light.jpg");
@@ -74,7 +74,7 @@ body {
 	max-width: 40%;
 	margin-bottom: 6rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.header {
 		justify-content: space-around;
 		max-width: 90%;
@@ -90,7 +90,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1.5rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.header h1 {
 		font-size: 3rem;
 		letter-spacing: 1.2rem;
@@ -102,7 +102,7 @@ body {
 	width: 5%;
 	cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.header img {
 		width: 8%;
 	}
@@ -117,7 +117,7 @@ body {
 	border-radius: 0.8rem;
 	margin-bottom: 3rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.add-todo {
 		max-width: 90%;
 		margin-bottom: 2rem;
@@ -133,7 +133,7 @@ body {
 	margin: auto;
 	text-align: left;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.add-todo input {
 		padding: 1rem;
 	}
@@ -146,7 +146,7 @@ input[type="text"] {
 	color: var(--color-text);
 	background-color: var(--color-background-color);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	input[type="text"] {
 		font-size: 1.8rem;
 	}
@@ -161,7 +161,7 @@ input[type="text"] {
 	box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
 	margin-bottom: 7rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.todos {
 		max-width: 90%;
 		border-radius: 0.4rem;
@@ -179,7 +179,7 @@ div.dark {
 	border-bottom: 1px solid var(--color-Very-Light-Grayish-Blue);
 	cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.text-field {
 		padding: 1.2rem;
 	}
@@ -196,7 +196,7 @@ div.dark {
 	border: 1px solid var(--color-Very-Light-Grayish-Blue);
 	margin-right: 3rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.circle-check {
 		max-height: 2rem;
 		min-width: 2rem;
@@ -215,7 +215,7 @@ div.dark {
 	word-break: break-all;
 	width: 80%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.text-field h3 {
 		font-size: 1.5rem;
 		width: 70%;
@@ -229,7 +229,7 @@ div.dark {
 	align-items: center;
 	color: var(--color-Dark-Grayish-Blue);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.todo-options {
 		display: none;
 	}
@@ -269,7 +269,7 @@ footer {
 	margin: auto;
 	text-align: center;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	footer {
 		width: 90%;
 	}
@@ -282,7 +282,7 @@ footer h3 {
 	color: var(--color-text);
 	margin-bottom: 3rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	footer h3 {
 		font-size: 1.5rem;
 	}
@@ -306,7 +306,7 @@ html.transition *:after {
 .mobile-todo-options {
 	display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.mobile-todo-options {
 		display: flex;
 		justify-content: space-between;
@@ -319,7 +319,7 @@ html.transition *:after {
 .mobile-options {
 	display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.mobile-options {
 		display: block;
 		max-width: 90%;
@@ -355,4 +355,8 @@ button {
 
 button:focus {
 	color: var(--color-Bright-Blue);
+}
+
+.grey-background-class {
+	background-color: var(--color-Dark-Grayish-Blue);
 }
